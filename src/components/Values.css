@@ -88,7 +88,7 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  .values__heading { font-size: 20px; }
+  .values__heading { font-size: 18px; }
   .values__intro p {
     font-size: 16px;
     margin-bottom: 12px;

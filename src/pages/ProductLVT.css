@@ -1,0 +1,273 @@
+/* ─── Hero ───────────────────────────────────────── */
+.plvt-hero {
+  width: 100%;
+  background: #fff;
+}
+
+.plvt-hero__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 480px;
+}
+
+.plvt-hero__img {
+  overflow: hidden;
+}
+
+.plvt-hero__img img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  max-height: 820px;
+  object-fit: cover;
+  display: block;
+}
+
+.plvt-hero__info {
+  padding: 100px 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plvt-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.plvt-specs-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.plvt-specs {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plvt-specs tr {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plvt-specs tr:first-child {
+  border-top: 1px solid #e8e8e8;
+}
+
+.plvt-specs__label,
+.plvt-specs__value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #111;
+  padding: 10px 0;
+}
+
+.plvt-specs__label {
+  font-weight: 500;
+  width: 45%;
+}
+
+.plvt-specs__value {
+  font-weight: 400;
+  color: #444;
+}
+
+/* ─── Inspiration ────────────────────────────────── */
+.plvt-inspiration {
+  width: 100%;
+  background: #fff;
+}
+
+.plvt-inspiration__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 60px 0;
+}
+
+.plvt-inspiration__header {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.plvt-inspiration__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  color: #000;
+}
+
+.plvt-inspiration__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* ─── Slider ─────────────────────────────────────── */
+.plvt-slider {
+  position: relative;
+  width: 100%;
+}
+
+.plvt-slider__img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.plvt-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.75);
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #111;
+  transition: background 0.2s;
+}
+
+.plvt-slider__btn:hover {
+  background: rgba(255,255,255,0.95);
+}
+
+.plvt-slider__btn--prev { left: 12px; }
+.plvt-slider__btn--next { right: 12px; }
+
+/* ─── All Floors / Related ───────────────────────── */
+.plvt-related {
+  width: 100%;
+  background: #fff;
+}
+
+.plvt-related__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 60px 100px;
+}
+
+.plvt-related__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.plvt-related__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.plvt-related__item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.plvt-related__item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.plvt-related__item span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+/* ─── Tablet ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .plvt-hero__info {
+    padding: 70px 32px 0;
+  }
+
+  .plvt-title {
+    font-size: 24px;
+  }
+
+  .plvt-inspiration__container {
+    padding: 70px 32px 0;
+  }
+
+  .plvt-related__container {
+    padding: 70px 32px 70px;
+  }
+
+  .plvt-slider__img {
+    height: 360px;
+  }
+}
+
+/* ─── Mobile ─────────────────────────────────────── */
+@media (max-width: 680px) {
+  .plvt-hero__container {
+    grid-template-columns: 1fr;
+  }
+
+  .plvt-hero__img img {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .plvt-hero__info {
+    padding: 48px 20px 0;
+  }
+
+  .plvt-title {
+    font-size: 22px;
+  }
+
+  .plvt-inspiration__container {
+    padding: 60px 20px 0;
+  }
+
+  .plvt-related__container {
+    padding: 60px 20px 60px;
+  }
+
+  .plvt-inspiration__header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .plvt-slider__img {
+    height: 240px;
+  }
+
+  .plvt-related__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

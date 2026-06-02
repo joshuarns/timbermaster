@@ -35,32 +35,35 @@
 }
 
 .flvt__name {
-  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
   font-weight: 600;
   color: #000;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .flvt__rule {
   border: none;
   border-top: 1px solid #bbb;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
 }
 
 .flvt__subtitle {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #000;
   letter-spacing: 0.02em;
-  margin: 0 0 18px 0;
+  margin: 0 0 16px 0;
 }
 
 .flvt__desc {
-  font-size: 26px;
-  font-weight: 300;
-  color: #333;
-  line-height: 1.4;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -75,12 +78,14 @@
 
 /* ─── Col 2: heading (top) + room (bottom) ──── */
 .flvt__heading {
+  font-family: 'Roboto', sans-serif;
   font-size: 34px;
   font-weight: 400;
+  text-transform: uppercase;
   line-height: 1.2;
   color: #111;
   margin: 0 0 40px 0;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
@@ -107,11 +112,11 @@
   .flvt__col--right {
     width: 100%;
   }
-  .flvt__name { font-size: 48px; }
+  .flvt__name { font-size: 40px; }
   .flvt__subtitle { font-size: 16px; }
-  .flvt__desc { font-size: 20px; }
+  .flvt__desc { font-size: 16px; }
   .flvt__heading {
-    font-size: 26px;
+    font-size: 28px;
     white-space: normal;
     margin-bottom: 24px;
   }
@@ -132,11 +137,11 @@
     padding: 40px 20px;
     gap: 30px;
   }
-  .flvt__name { font-size: 38px; }
-  .flvt__subtitle { font-size: 14px; }
-  .flvt__desc { font-size: 16px; }
+  .flvt__name { font-size: 32px; }
+  .flvt__subtitle { font-size: 16px; }
+  .flvt__desc { font-size: 15px; }
   .flvt__heading {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 16px;
   }
   .flvt__tile {

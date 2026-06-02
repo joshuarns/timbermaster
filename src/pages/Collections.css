@@ -43,6 +43,12 @@
 }
 
 /* ─── Product list ───────────────────────────────── */
+.col-product {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .col-products {
   width: 100%;
   background: #fff;
@@ -124,11 +130,11 @@
   }
 
   .col-intro__title {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .col-intro__body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .col-hero img {
@@ -145,10 +151,10 @@
   }
 
   .col-product__name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .col-product__desc {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
