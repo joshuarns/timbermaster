@@ -1,0 +1,150 @@
+/* ─── Contenedor principal gris 100% ─────────── */
+.flvt {
+  width: 100%;
+  background: #efefef;
+}
+
+/* ─── Contenedor 1300px max ──────────────────── */
+.flvt__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 70px 60px 50px;
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* ─── Columnas ───────────────────────────────── */
+.flvt__col {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.flvt__col--left  { width: 30%; }
+.flvt__col--right { width: 70%; }
+
+/* ─── Col 1: meta (top) + tile (bottom) ─────── */
+.flvt__meta { margin-bottom: 40px; }
+
+.flvt__label-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.flvt__name {
+  font-size: 60px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.flvt__rule {
+  border: none;
+  border-top: 1px solid #bbb;
+  margin: 0 0 12px 0;
+}
+
+.flvt__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0.02em;
+  margin: 0 0 18px 0;
+}
+
+.flvt__desc {
+  font-size: 26px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.flvt__tile {
+  width: 290px;
+  height: 290px;
+  object-fit: cover;
+  margin-top: 32px;          /* debajo de la descripción */
+  position: relative;
+  z-index: 2;
+}
+
+/* ─── Col 2: heading (top) + room (bottom) ──── */
+.flvt__heading {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #111;
+  margin: 0 0 40px 0;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.flvt__room {
+  width: 880px;
+  height: 579px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: auto;          /* alineado abajo */
+  align-self: flex-end;      /* alineado a la derecha de la col */
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Tablet ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .flvt__container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 32px;
+  }
+  .flvt__col--left,
+  .flvt__col--right {
+    width: 100%;
+  }
+  .flvt__name { font-size: 48px; }
+  .flvt__subtitle { font-size: 16px; }
+  .flvt__desc { font-size: 20px; }
+  .flvt__heading {
+    font-size: 26px;
+    white-space: normal;
+    margin-bottom: 24px;
+  }
+  .flvt__tile {
+    width: 240px;
+    height: 240px;
+  }
+  .flvt__room {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 880 / 579;
+  }
+}
+
+/* ─── Mobile ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .flvt__container {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  .flvt__name { font-size: 38px; }
+  .flvt__subtitle { font-size: 14px; }
+  .flvt__desc { font-size: 16px; }
+  .flvt__heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .flvt__tile {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-top: 24px;
+  }
+  .flvt__rule { margin-bottom: 10px; }
+  .flvt__meta { margin-bottom: 24px; }
+}

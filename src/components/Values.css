@@ -1,0 +1,96 @@
+/* ─── Contenedor principal 100% ─────────────── */
+.values {
+  width: 100%;
+  background: #fff;
+}
+
+/* ─── Contenedor 1300px max ─────────────────── */
+.values__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 60px 100px;
+}
+
+/* ─── Top: 100% del padre, 70/30 ────────────── */
+.values__top {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Col descripción 30% */
+.values__intro {
+  width: 30%;
+}
+
+.values__intro p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #111;
+  margin: 0 0 18px 0;
+}
+
+.values__intro p:last-child { margin-bottom: 0; }
+
+/* Col textos 70% — grid de 3 columnas */
+.values__texts {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.values__heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #000;
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+
+/* ─── Imagen ────────────────────────────────── */
+.values__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Tablet ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .values__container {
+    padding: 60px 32px 80px;
+  }
+  .values__top {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+  .values__intro,
+  .values__texts {
+    width: 100%;
+  }
+  .values__heading { font-size: 22px; }
+  .values__intro p { font-size: 18px; }
+}
+
+/* ─── Mobile ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .values__container {
+    padding: 40px 20px 60px;
+  }
+  .values__top { gap: 24px; margin-bottom: 36px; }
+  .values__texts {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .values__heading { font-size: 20px; }
+  .values__intro p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,62 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 72px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__logo img {
+  height: 18px;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 56px;
+}
+
+.navbar__links a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #111;
+  transition: opacity 0.2s;
+}
+
+.navbar__links a:hover {
+  opacity: 0.5;
+}
+
+/* ─── Tablet ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 24px;
+    height: 64px;
+  }
+  .navbar__links {
+    gap: 32px;
+  }
+}
+
+/* ─── Mobile ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 16px;
+    height: 56px;
+  }
+  .navbar__logo img {
+    height: 14px;
+  }
+  .navbar__links {
+    gap: 16px;
+  }
+  .navbar__links a {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+}

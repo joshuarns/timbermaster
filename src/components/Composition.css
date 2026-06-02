@@ -1,0 +1,145 @@
+/* ─── Contenedor principal 100% (relative) ──── */
+.comp {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── Contenedor 1300px max ─────────────────── */
+.comp__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 60px 120px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Header: título + tabs ─────────────────── */
+.comp__header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+
+.comp__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.comp__tabs {
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #111;
+}
+
+.comp__tab {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.comp__tab:hover { opacity: 0.6; }
+
+/* ─── Body: features (sola la lista, la imagen va absolute) ─── */
+.comp__body {
+  width: 50%;          /* la lista ocupa la mitad izquierda */
+}
+
+.comp__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.comp__feature {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111;
+}
+
+/* ─── Imagen absolute pegada a la derecha ───── */
+.comp__image {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 60vw;
+  max-width: 1100px;
+  height: auto;
+  z-index: 0;
+  display: block;
+}
+
+/* ─── Tablet ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .comp__container {
+    padding: 60px 32px 80px;
+  }
+  .comp__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+  .comp__tabs {
+    width: 100%;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-bottom: 14px;
+  }
+  .comp__title { font-size: 22px; }
+  .comp__tab { font-size: 18px; }
+  .comp__body { width: 100%; }
+  .comp__feature { font-size: 14px; gap: 20px; }
+  .comp__features { gap: 28px; }
+
+  /* imagen ya no absolute — flujo normal abajo */
+  .comp__image {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/* ─── Mobile ──────────────────────────────────── */
+@media (max-width: 640px) {
+  .comp__container {
+    padding: 40px 20px 60px;
+  }
+  .comp__header {
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+  .comp__title { font-size: 18px; }
+  .comp__tabs {
+    gap: 18px 24px;
+    padding-bottom: 12px;
+  }
+  .comp__tab { font-size: 14px; gap: 8px; }
+  .comp__tab svg { width: 22px; height: 22px; }
+  .comp__feature { font-size: 13px; gap: 16px; }
+  .comp__feature svg { width: 26px; height: 26px; }
+  .comp__features { gap: 20px; }
+  .comp__image { margin-top: 36px; }
+}
