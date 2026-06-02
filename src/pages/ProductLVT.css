@@ -215,15 +215,31 @@
   }
 
   .plvt-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .plvt-inspiration__container {
     padding: 70px 32px 0;
   }
 
+  .plvt-inspiration__title {
+    font-size: 28px;
+  }
+
+  .plvt-inspiration__desc {
+    font-size: 16px;
+  }
+
   .plvt-related__container {
     padding: 70px 32px 70px;
+  }
+
+  .plvt-related__title {
+    font-size: 28px;
+  }
+
+  .plvt-related__item span {
+    font-size: 16px;
   }
 
   .plvt-slider__img {
@@ -254,8 +270,24 @@
     padding: 60px 20px 0;
   }
 
+  .plvt-inspiration__title {
+    font-size: 24px;
+  }
+
+  .plvt-inspiration__desc {
+    font-size: 16px;
+  }
+
   .plvt-related__container {
     padding: 60px 20px 60px;
+  }
+
+  .plvt-related__title {
+    font-size: 24px;
+  }
+
+  .plvt-related__item span {
+    font-size: 15px;
   }
 
   .plvt-inspiration__header {
